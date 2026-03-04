@@ -32,11 +32,16 @@ export default function WhitepaperTabs() {
     return () => clearTimeout(t);
   }, [active]);
 
-  // scroll active tab into view on mobile
+  // scroll active tab into view on mobile — only horizontally inside the container
   useEffect(() => {
-    const el = containerRef.current?.querySelector('[data-tab-active="true"]') as HTMLElement | null;
-    if (el && el.scrollIntoView) {
-      el.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+    const container = containerRef.current as HTMLDivElement | null;
+    const el = container?.querySelector('[data-tab-active="true"]') as HTMLElement | null;
+    if (container && el) {
+      // calculate horizontal offset to center the active tab inside the scroll container
+      const containerRect = container.getBoundingClientRect();
+      const elRect = el.getBoundingClientRect();
+      const offset = elRect.left - containerRect.left - container.clientWidth / 2 + el.clientWidth / 2;
+      container.scrollTo({ left: container.scrollLeft + offset, behavior: "smooth" });
     }
   }, [active]);
 
