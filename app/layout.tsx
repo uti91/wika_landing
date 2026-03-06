@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 const BASE_URL = "https://landing-page-airdrop.vercel.app";
+const OG_IMAGE = `${BASE_URL}/og-image.png`;
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -56,10 +57,10 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/og-Better.png",
+        url: OG_IMAGE, 
         width: 1200,
         height: 630,
-        alt: "WikaEX – 1B Fixed Supply Blockchain",
+        alt: "WikaEX Blockchain 1B Fixed Supply",
       },
     ],
   },
@@ -69,7 +70,7 @@ export const metadata: Metadata = {
     title: "WikaEX – 1B Fixed Supply Blockchain | Claim $WIKA Airdrop",
     description:
       "WikaEX is a fixed 1B supply blockchain asset with transparent emission, predictable tokenomics, and long-term scarcity design. Claim your $WIKA airdrop today.",
-    images: ["/og-Better.png"],
+    images: [OG_IMAGE], // ✅
     creator: "@wikaex",
   },
 
