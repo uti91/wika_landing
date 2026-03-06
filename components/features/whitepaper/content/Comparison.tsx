@@ -3,7 +3,7 @@ import SectionCard from "../SectionCard";
 export default function Comparison() {
   return (
     <>
-    <SectionCard number="9" title="Economic Comparison">
+    <SectionCard number="6.1" title="Economic Comparison">
           <div className="overflow-x-auto">
               <table className="w-full text-sm text-left">
                   <thead className="bg-cyan-600 text-white">
@@ -51,7 +51,7 @@ export default function Comparison() {
           <p className="mt-4">
               Wikaex emphasizes <strong>predictability and controlled distribution</strong>.
           </p>
-      </SectionCard><SectionCard number="10" title="Use Case">
+      </SectionCard><SectionCard number="6.2" title="Use Case">
               <p>Wikaex is designed to serve as:</p>
               <ul className="list-disc pl-6 space-y-2">
                   <li>Native digital currency</li>
@@ -59,7 +59,7 @@ export default function Comparison() {
                   <li>Ecosystem governance asset</li>
                   <li>Foundation for future decentralized applications</li>
               </ul>
-          </SectionCard><SectionCard number="11" title="Transparency">
+          </SectionCard><SectionCard number="6.3" title="Transparency">
               <p>Wikaex provides public endpoints:</p>
               <ul className="list-disc pl-6 space-y-2">
                   <li>/status - Network status</li>

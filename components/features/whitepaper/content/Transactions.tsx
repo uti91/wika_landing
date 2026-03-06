@@ -36,7 +36,7 @@ export default function Transactions() {
         </ul>
       </SectionCard>
 
-      <SectionCard number="6" title="Wallet System">
+      <SectionCard number="5.3" title="Wallet System">
         <p>Wallets are generated with:</p>
         <ul className="list-disc pl-6 space-y-2">
           <li>64-character hexadecimal private key</li>
@@ -48,7 +48,7 @@ export default function Transactions() {
         </p>
       </SectionCard>
 
-      <SectionCard number="8" title="Security Model">
+      <SectionCard number="5.4" title="Security Model">
         <p>Wikaex implements:</p>
         <ul className="list-disc pl-6 space-y-2">
           <li>Hash-linked blocks</li>

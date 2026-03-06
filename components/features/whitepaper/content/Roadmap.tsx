@@ -3,7 +3,7 @@ import SectionCard from "../SectionCard";
 export default function Roadmap() {
   return (
     <>
-    <SectionCard number="12" title="Development Roadmap">
+    <SectionCard number="7.1" title="Development Roadmap">
           <ul className="space-y-4">
               <li>
                   <b>Phase 1 – Mainnet Deployment</b>
@@ -40,7 +40,7 @@ export default function Roadmap() {
                   </p>
               </li>
           </ul>
-      </SectionCard><SectionCard number="13" title="Conclusion">
+      </SectionCard><SectionCard number="7.2" title="Conclusion">
               <p>
                   Wikaex represents a <strong>controlled, fixed-supply, native blockchain asset</strong> designed for scalability and transparency. With a total supply of 1 billion Wikaex and a secure transaction validation mechanism, Wikaex offers a predictable digital asset model suitable for ecosystem expansion and exchange integration.
               </p>

@@ -39,7 +39,7 @@ export default function Architecture() {
         </ul>
       </SectionCard>
 
-      <SectionCard number="7" title="State Management">
+      <SectionCard number="3.4" title="State Management">
         <p>Wikaex uses JSON-based persistence:</p>
         <ul className="list-disc pl-6 space-y-2">
           <li><strong>state.json</strong> → balances</li>
